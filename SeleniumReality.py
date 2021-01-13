@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.options import Options
 
 
 class ChromeReality:
+
     def __init__(self):
         # 配置真实浏览器环境
         self.chrome_path = r'C:\Program Files\Google\Chrome\Application\chrome.exe'  # 1. 指定本地浏览器绝对路径
@@ -24,6 +25,7 @@ class ChromeReality:
 
 
 class SeleniumReality(ChromeReality):
+
     def __init__(self):
         super(SeleniumReality, self).__init__()
         self.url = 'https://passport.taobao.com/ac/password_find.htm?from_site=0'  # 淘宝找回验证码界面
