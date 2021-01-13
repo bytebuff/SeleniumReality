@@ -11,7 +11,7 @@ class ChromeReality:
         # 配置真实浏览器环境
         self.chrome_path = r'C:\Program Files\Google\Chrome\Application\chrome.exe'  # 1. 指定本地浏览器绝对路径
         self.remote_debugging_port = random.randint(9222, 9999)  # 2. 指定浏览器启动端口
-        self.user_data_dir = r'C:\Users\turingcoffee\Desktop\SeleniumUserData'  # 3. 指定浏览器的UserDataDir
+        self.user_data_dir = r'C:\Users\xxx\Desktop\SeleniumUserData'  # 3. 指定浏览器的UserDataDir
         # 启动真实浏览器
         subprocess.Popen([
             self.chrome_path,
