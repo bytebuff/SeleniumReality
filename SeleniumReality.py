@@ -31,7 +31,7 @@ class SeleniumReality(ChromeReality):
         self.url = 'https://passport.taobao.com/ac/password_find.htm?from_site=0'  # 淘宝找回验证码界面
 
     def taobao_slider(self):
-        for index in range(5):
+        for index in range(1):
             self.browser.get(self.url)
             # 定位滑块元素
             source = self.browser.find_element_by_id("nc_1_n1z")
